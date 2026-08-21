@@ -17,6 +17,17 @@ later correction exists.
 transcription correction, privacy redactions and the reproducibility limits of the imported
 findings.
 
+`findings/prior-artefacts/forensic-analysis-carl-webb-review-2026-08-21.md` — claim and methods
+audit of the unattributed handwriting-analysis PDF retained under `data/raw/research-reports/`.
+The report is hypothesis-generating material, not a current forensic finding.
+
+`reports/carl-webb-inscription-critical-assessment-2026-08-21.md` — corrected, source-audited
+assessment of the report's technical-lettering and initialism hypotheses. The editable
+Markdown is authoritative; a reader-formatted PDF is at
+`../output/pdf/carl-webb-inscription-critical-assessment-2026-08-21.pdf`.
+Regenerate it with `python tools/build_carl_webb_report.py`; this requires ReportLab and the
+DejaVu font family.
+
 ## Filing a new finding
 
 Copy the pattern:

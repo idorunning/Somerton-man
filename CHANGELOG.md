@@ -9,6 +9,26 @@ dated at the point of decision.
 
 ---
 
+## 2026-08-21 — Unattributed inscription report retained with a negative evidence verdict
+
+A three-page PDF titled *Forensic & Paleographic Analysis: The Somerton Man Inscription and
+Carl Webb* was supplied to the project. It has been retained unchanged under
+`data/raw/research-reports/` with its SHA-256 checksum, metadata and provenance limitations.
+
+The accompanying review does not accept it as a forensic finding. It contains a wrong Webb
+birth date, overstates the status and institutional validation of the Webb identification,
+mis-cites NAA series as electoral rolls, gives an apparently incorrect engineering-standard
+identifier, selects transcription variants without justification, and provides no source
+image, known Webb writing, measurement data or reproducible language test. Its occupational
+lettering and initialism ideas remain leads for controlled testing; its authorship, terminal
+`S`, 0.1 mm match and poetic-acrostic conclusions must not be cited as established.
+
+A corrected research note now separates observation from inference, uses the repository's
+declared transcription, replaces untraceable claims with auditable sources and sets out a
+reproducible testing programme. Its Markdown source is authoritative; a four-page PDF is
+provided for reading and circulation. The supplied original remains unchanged as a raw
+artefact.
+
 ## 2026-08-21 — Transcription corrected during GitHub import
 
 The uploaded archive transcribed the initial character of Lines 1 and 3 as M and treated Line

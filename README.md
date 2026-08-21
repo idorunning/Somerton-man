@@ -40,7 +40,7 @@ somerton-man/
 ├── src/                       scripts that turn raw into processed
 ├── source-manifests/          provenance manifests for retained sources
 ├── tests/                     automated checks and fixtures
-└── tools/                     standalone HTML applications
+└── tools/                     report builder and standalone HTML applications
 ```
 
 ## Working rules
@@ -85,3 +85,11 @@ parsing; verify numeric columns against male-plus-female sums before use.
 South Australia*, June 30th 1938 (PP No. 47), signed R. H. Chapman, Chief Engineer for
 Railways. Base source for all rail station verification. See the provenance note in that
 directory.
+
+`data/raw/research-reports/forensic-analysis-carl-webb/` — an unattributed three-page report
+proposing a handwriting and poetic-initialism interpretation. Retained as supplied, with a
+checksum and provenance note. It is not a validated forensic finding; read
+`docs/findings/prior-artefacts/forensic-analysis-carl-webb-review-2026-08-21.md` before citing
+it. A corrected, source-audited research note is available as an
+[editable Markdown report](docs/reports/carl-webb-inscription-critical-assessment-2026-08-21.md)
+and [four-page PDF](output/pdf/carl-webb-inscription-critical-assessment-2026-08-21.pdf).

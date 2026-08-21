@@ -1,16 +1,19 @@
-# Prior artefacts recovered from private project storage
+# Prior analytical artefacts
 
-Two documents recovered on 21 August 2026 from the private extractor-output folder. Both
-predate this repository and neither has a producing script here. Account details and storage
-identifiers are deliberately omitted from this public repository.
+Two documents were recovered on 21 August 2026 from the private extractor-output folder. A
+third, unattributed PDF was supplied directly to the project on the same date. The first two
+predate this repository and neither has a producing script here. The third gives no creation
+date. Account details and storage identifiers are deliberately omitted from this public
+repository.
 
-They are filed as historical artefacts, not as current findings. Read the reconciliation below
-before citing either of them.
+They are filed as historical artefacts, not as current findings. Read the reconciliations below
+before citing any of them.
 
 | File | Original | Date |
 |---|---|---|
 | `queenstown_analysis_2026-04-28.md` | `queenstown_analysis.md` | 28 April 2026 |
 | `rpfa_marino_summary_2026-04-29.md` | `rpfa/summary.md` | 29 April 2026 |
+| `forensic-analysis-carl-webb-review-2026-08-21.md` | review of `Somerton_Man_Forensic_Analysis_Carl_Webb.pdf` | report date not stated; reviewed 21 August 2026 |
 
 ---
 
@@ -79,6 +82,29 @@ consistent with everything since.
 **Status:** retain as a record of the earlier method. Do not cite the "strong support" verdict.
 The document's own closing caveat about vision-extraction error is sound and should be carried
 forward.
+
+---
+
+## Reconciliation 3: the unattributed "forensic" report is not a forensic finding
+
+The supplied PDF attributes the inscription to Webb's occupational motor habits and concludes
+that it is probably mnemonic initials for unpublished verse. Its ideas are testable, but the
+document does not contain the material required to test them. It has no author, date,
+qualifications, original inscription image, known Webb comparison writing, measurements,
+calibration, statistical output or reproducible method.
+
+The review also found a wrong birth date, an overstatement of the official status of the Webb
+identification, archive series that do not contain the electoral rolls claimed, an apparently
+wrong engineering-standard citation, and an unexplained transcription variant. The report's
+0.1 mm glyph match, terminal-`S` interpretation and poetic-metre conclusion must not be carried
+into the project record as facts.
+
+**Status:** retain the original PDF under `data/raw/research-reports/` with its checksum and
+provenance note. Treat it as a lead list only. See
+`forensic-analysis-carl-webb-review-2026-08-21.md` for the full claim audit and reproducible
+next tests. The corrected, reader-facing assessment is maintained at
+`../../reports/carl-webb-inscription-critical-assessment-2026-08-21.md`, with a rendered PDF at
+`../../../output/pdf/carl-webb-inscription-critical-assessment-2026-08-21.pdf`.
 
 ---
 
