@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Candidate location record",
+  "description": "One row of the candidate place gazetteer. Fields marked network_layer are required for the sequence-and-connectivity test and are currently unpopulated across the whole table — see OPEN_QUESTIONS.md item 3.",
+  "type": "object",
+  "required": ["place_id", "name", "initial", "latitude", "longitude", "source"],
+  "properties": {
+    "place_id": {
+      "type": "string",
+      "description": "Stable unique identifier. Never reused, never renumbered."
+    },
+    "name": {
+      "type": "string",
+      "description": "Place name as it appears in the primary source, unnormalised."
+    },
+    "name_normalised": {
+      "type": ["string", "null"],
+      "description": "Uppercased, punctuation stripped. Derived, not authoritative."
+    },
+    "initial": {
+      "type": "string",
+      "pattern": "^[A-Z]$",
+      "description": "First letter of the place name. Matching is first-letter-only: 'Port Adelaide' has initial P, not A."
+    },
+    "place_type": {
+      "type": "string",
+      "enum": ["locality", "suburb", "town", "railway_station", "tram_stop", "bus_stop", "terminus", "other"],
+      "description": "What kind of place this is. A locality and the station serving it are separate records."
+    },
+    "latitude": { "type": "number", "minimum": -90, "maximum": 90 },
+    "longitude": { "type": "number", "minimum": -180, "maximum": 180 },
+    "coord_precision": {
+      "type": ["string", "null"],
+      "enum": ["exact", "map_estimate", "centroid", "approximate", null],
+      "description": "How the coordinate was obtained. map_estimate means read off the 1938 sheet by eye."
+    },
+    "population_1947": {
+      "type": ["integer", "null"],
+      "description": "1947 Commonwealth Census, Volume I Part VIII. Null where the place is not a census unit."
+    },
+    "population_source_row": {
+      "type": ["string", "null"],
+      "description": "Census table and row reference, for reconciliation."
+    },
+
+    "mode": {
+      "type": ["string", "null"],
+      "enum": ["rail", "tram", "trolleybus", "motor_bus", "coach", "none", null],
+      "description": "network_layer. UNPOPULATED. Transport mode serving this place in 1948."
+    },
+    "route_id": {
+      "type": ["array", "null"],
+      "items": { "type": "string" },
+      "description": "network_layer. UNPOPULATED. Route or line identifiers serving this place. A place on two routes carries both; a shared identifier between two places is a direct connection."
+    },
+    "route_seq": {
+      "type": ["object", "null"],
+      "description": "network_layer. UNPOPULATED. Map of route_id to ordinal position along that route. Required for direction-of-travel reasoning.",
+      "additionalProperties": { "type": "integer" }
+    },
+    "service_from": {
+      "type": ["string", "null"],
+      "description": "network_layer. UNPOPULATED. Earliest confirmed service date, ISO 8601 or year. See the Queenstown problem, OPEN_QUESTIONS.md item 1."
+    },
+    "service_to": {
+      "type": ["string", "null"],
+      "description": "network_layer. UNPOPULATED. Closure date. Null if still open in 1948."
+    },
+    "service_confirmed": {
+      "type": ["boolean", "null"],
+      "description": "network_layer. True only where service_from is verified against a primary record. Default false."
+    },
+
+    "source": {
+      "type": "string",
+      "description": "Primary source for this record. For rail stations this is normally the 1938 SA Railways map, P.P. No. 47."
+    },
+    "source_frame": {
+      "type": ["string", "null"],
+      "enum": ["1938_railway_map", "1947_census", "mtt_records", "bus_records", "other", null]
+    },
+    "notes": {
+      "type": ["string", "null"],
+      "description": "Free text. Use for disagreements between sources and for anything load-bearing."
+    },
+    "load_bearing": {
+      "type": ["boolean", "null"],
+      "description": "True where a downstream conclusion depends on this record being correct. Queenstown is the current example."
+    }
+  }
+}
