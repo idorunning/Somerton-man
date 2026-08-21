@@ -148,6 +148,14 @@ The 1948 stop-sequence search was as complete as the source data behind it, and 
 coverage has never been independently checked. A stop list with gaps could hide a match. Worth
 knowing how good the coverage was before treating the negative as settled.
 
+### D5. Test the technical-lettering lead properly
+The unattributed report in `data/raw/research-reports/forensic-analysis-carl-webb/` proposes that
+the inscription reflects Webb's instrument-making training. Before using that claim, locate
+authenticated contemporaneous Webb handwriting, the 1941 and 1946 `CZ1` drawing standards,
+any relevant PMG training manual, and the highest-generation inscription image available. Ask
+the report's supplier for its author, source plates, raw measurements and full references.
+Pre-declare the comparison features and transcription variants before inspecting the outcome.
+
 ---
 
 ## Publication
