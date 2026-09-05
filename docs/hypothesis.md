@@ -1,43 +1,11 @@
-# Hypothesis
+# Research question and transcription
 
-## Research question
+Could the Somerton Man inscription be a mnemonic itinerary of places, using one or more transport modes?
 
-Could the five-line Somerton Man inscription represent a mnemonic or abbreviated rail and tram travel itinerary?
+The maintained definition, transcription and limitations are in [HYPOTHESIS.md](../HYPOTHESIS.md). Read that file before using a legacy analysis.
 
-## Inscription under examination
+The working reading has physical line 2, `MLIAOI`, cancelled. Physical line 4 is `MLIABOAIAQC`, with C/S retained as a variant. Independently retain M/W alternatives at the start of physical lines 1 and 3. The default has 44 active characters and 17 distinct letters. The previous assertion here that physical line 4 was the cancelled line is withdrawn.
 
-```text
-WRGOABABD
-MLIAOI
-WTBIMPANETP
-MLIABOAIAQC
-ITTMTSAMSTGAB
-```
+Transport interpretations must be compared with prose or verse initials, other mnemonics, cryptographic explanations and non-semantic writing. Plausibility alone is insufficient: a candidate journey must use dated places and services, follow a fixed encoding rule, outperform controls and remain reproducible.
 
-The fourth line is commonly reported as crossed out. Transcription variants must be recorded rather than silently resolved.
-
-## Working hypothesis
-
-One or more letters may represent station, stop, junction, route or place-name initials. Repeated letter groups may reflect repeated sections of a journey, corrections or alternative routes.
-
-## Competing explanations
-
-- Initial letters from prose, verse or a private message
-- A cipher or code unrelated to transport
-- A mnemonic for another sequence
-- Random or non-semantic writing
-- A transcription or interpretation error
-
-## Testable expectations
-
-A transport interpretation should produce routes that:
-
-1. existed at the relevant date;
-2. are geographically and temporally plausible;
-3. explain repeated patterns without excessive exceptions;
-4. perform better than plausible random or competing interpretations; and
-5. remain reproducible from cited source material.
-
-## Status
-
-Unproven working hypothesis. No station match should be treated as evidence until its source, date and uncertainty have been recorded.
+Status: unproven. See [5 September 2026 review](findings/route-review-2026-09-05.md).

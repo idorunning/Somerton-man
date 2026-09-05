@@ -1,46 +1,35 @@
-# 1938 South Australian Railways map — provenance
+# Map photographs — corrected provenance
 
-**Title:** Map Showing Lines of Railways in South Australia
-**Date:** June 30th, 1938
-**Parliamentary paper:** P.P. No. 47
-**Signed:** R. H. Chapman, Chief Engineer for Railways
-**Issued:** To accompany the Report of the Railways Commissioner for the year ended June 30th, 1938
-**Printer:** Government Photolithographer, Adelaide
+Reviewed 5 September 2026. Original repository image bytes and filenames are unchanged by this review.
 
-## What these files are
+## South Australian Railways sheet
 
-Twenty photographs of a single physical copy of the map, taken in one session on 13 September
-2025. Filenames are the original camera filenames and are retained unchanged. Several frames
-are photographed upside down or at an angle; this is a property of how the folded sheet was
-handled and is not corrected in `raw/`. Any rotation or rectification happens downstream.
+Nineteen repository photographs show sections of **Map Showing Lines of Railways in South Australia**, accompanying the Railways Commissioner's report for the year ended **30 June 1938**, P.P. No. 47, signed R. H. Chapman. The report-year statement is visible on the title block and the schedule is headed 30 June 1938. This establishes document context, not service status in November 1948.
 
-## Coverage
+`PXL_20250913_094411475.jpg` shows a separately framed **Map Showing the Principal Railway Systems of Australia**. It is not visibly an inset on the SAR sheet. Its own publication date is unverified; do not inherit the 1938 date.
 
-The set covers the full sheet including the two inset panels:
+## File quality and access
 
-- **Enlargement Showing Railways Near Adelaide** — the metropolitan detail inset, the primary
-  source for Adelaide-area station verification. Best frames: `PXL_20250913_090404586.jpg`,
-  `PXL_20250913_090410593.jpg`, `PXL_20250913_090419827.jpg`, `PXL_20250913_090440202.jpg`.
-- **Map Showing the Principal Railway Systems of Australia** — the national context inset:
-  `PXL_20250913_094411475.jpg`.
-- **Schedule of Railways, June 30th 1938** — the mileage tables by gauge, giving line sections
-  open for traffic, under construction and authorised by Parliament:
-  `PXL_20250913_090254215.jpg`, `PXL_20250913_090344353.jpg`.
-- Regional sheets covering Eyre Peninsula, the Mid North, the Murray Mallee, the South East,
-  and the Central Australia line north to Oodnadatta.
+The 20 repository JPEGs are small derivatives, roughly 95–192 kB and 952 × 1288 pixels or the reverse. Camera-style filenames alone do not establish untouched camera originals. Their names indicate 13 September 2025; that is not the date of this review's access.
 
-## Status in this project
+The inspected Google Drive folder contains 19 files: 12 matching SAR filenames, one prefixed national-map filename and six other files whose contents were not visually inspected. Matching Drive filenames are roughly 2–3 MB. Byte identity is unverified. The earlier claim that these maps were not on Drive is withdrawn. Original-byte access failed with HTTP 403; the review used repository derivatives and the separate embedded raster.
 
-This is the base source for all rail station verification. Where a station name in
-`data/processed/` disagrees with this map, this map wins, and the disagreement is recorded in
-`CHANGELOG.md`.
+The source register retains a non-identifying inventory of the private project map folder inspected on 5 September 2026.
 
-Note the limits: this is a 1938 map used to reason about 1948 conditions. Lines opened,
-closed, or renamed in the intervening decade are not captured. Any station whose 1948 status
-matters to a conclusion needs separate confirmation.
+## Corrected coverage
 
-## Not in this repository
+| Filename suffix | Actual subject |
+| --- | --- |
+| 090410593 | Readable Adelaide metropolitan enlargement; preferred metro frame |
+| 090316927 | Title and report-year context |
+| 090254215 | Schedule of Railways; lower continuation in 090304479 |
+| 090344353 | Murray Mallee / Tailem Bend–Serviceton; not the schedule |
+| 090431519 | Eyre Peninsula, upside down; not Adelaide |
+| 090440202 | Port Augusta / Port Pirie / Mid North; not the metropolitan inset |
+| 094411475 | Separate national railway map; date unverified |
 
-The scans exist here and in the private project folder. The private cloud map-scan folders
-hold different material. Their identifiers are deliberately omitted from this public
-repository.
+Queenstown is not a stopping-place label on the inspected metropolitan enlargement. It is visibly named on the separately supplied, undated Adelaide Environs raster. That establishes a locality on that map, not a 1948 railway station or service.
+
+The metropolitan enlargement has a different scale from the main state sheet and needs its own georeferencing. The existing photographed Adelaide Environs raster has no demonstrated control points or rectification. Its previous coordinate overlay cannot support precise distances or historic travel paths.
+
+Complete per-file inventory and checksums: [repository map catalogue](../../../../source-manifests/repo-map-catalogue-2026-09-05.json). Keep raw files unchanged; label all display rotations and any later rectified derivatives. A 1938 source does not override a properly dated source for 1948 opening, closure or renaming questions.

@@ -1,87 +1,48 @@
-# Sequence and Connectivity Test — Design
+# Sequence and connectivity test — revised design
 
-**Status: not run. Blocked on `OPEN_QUESTIONS.md` items 1 and 3.**
+Reviewed 5 September 2026. **The complete 1948 multimodal test has not been run.** The new four-corridor exact-string check is a separate, bounded reproduction; see [its finding](../findings/route-designation-test.md).
 
-This is the test that matters. Everything else in this repository either sets it up or works
-around its absence.
+## Question and limits
 
-## The question it answers
+Under a fixed vocabulary and encoding rule, do the ordered letters fit historically available journeys better than appropriate controls searched with the same flexibility?
 
-Set-membership asks: *does a place exist for each letter?* The answer is yes, for every letter,
-which is why the answer is worthless — a random string would pass too.
+A successful fit is conditional evidence for a model, not proof of the author, motive or exact journey. A failed fit rejects that defined model, not every possible use of travel notes. A non-significant comparison is not automatically proof of equivalence.
 
-The sequence test asks something a random string should fail: *read in written order, do the
-letters trace a route a person could actually have travelled?*
+## Register before fitting
 
-A genuine itinerary has properties that a random string does not. Consecutive letters should
-resolve to places that are connected — on the same line, on intersecting lines, or a short
-walk apart. The route should not teleport. It should be traversable in a day, or in whatever
-window the writer had. It should not require doubling back across the metropolitan area
-between every pair of stops.
+1. **Transcription:** physical line 2 cancelled and retained separately; eight independent W/M × W/M × C/S variants. Preserve other marks in image records.
+2. **Grammar:** decide one token per place, repeated-token consistency, omissions and action tokens. Test multi-letter facility abbreviations as a separate model.
+3. **Vocabulary:** freeze dated names, aliases, location types, geographic bounds and exclusions before matching.
+4. **Time:** distinguish a 30 November hypothesis from another-day or multi-day hypothesis. Tickets do not date the writing.
+5. **Travel:** declare permitted modes, walks, waits, operating days, accessibility and transfer rules. Include water only with independently sourced crossing evidence.
+6. **Score:** fix penalties, missing-data treatment, journey budgets and all parameter sweeps. Publish the registration and input hashes.
 
-## The test
+## Network requirements
 
-For each code line, in written order:
+Use separate location, route and service tables. A route identifier alone does not make every pair an immediate connection. Stops need direction, order and segment travel times; services need operating dates, days and departures. Interchanges need actual access paths and allowed transfer times.
 
-1. Enumerate every assignment of places to letters, subject to the constraint that place *i*
-   begins with letter *i*.
-2. For each assignment, evaluate the path *p₁ → p₂ → ... → pₙ* against the 1948 network:
-   - Is each consecutive pair connected? Same route, interchange, or walkable gap.
-   - What is the cumulative journey time using 1948 timetables where available, or a distance
-     proxy where not?
-   - How many mode changes and interchanges does it require?
-3. Score each assignment. Retain the best-scoring path per line — the **best fit under
-   sequence coherence**.
-4. Compare the best fit for the real code lines against the best fit for a large sample of
-   random strings of the same length drawn from the same letter distribution.
+| Record | Required information |
+| --- | --- |
+| Location | Stable ID, dated name, type, approximate coordinates, coordinate uncertainty, source |
+| Route segment | Origin/destination IDs, direction, mode, route ID, stop order, distance if sourced |
+| Service | Date range, operating days, departure/arrival or explicit estimated duration, source page |
+| Interchange | Connecting locations, walking or transfer rule, time and access constraints |
+| Source coverage | Inspected pages, unresolved gaps, provenance and confidence |
 
-Step 4 is the whole test. If the real lines score no better than random strings, the hypothesis
-fails a test it could have passed. If they score markedly better, that is the first genuine
-evidence the itinerary reading has produced.
+Do not silently treat a 1938 infrastructure map as a 1948 timetable. Do not replace unavailable travel times with modern estimates without labelling a separate model.
 
-## What is needed to run it
+## Search and controls
 
-**A network layer that does not yet exist.** The current locations table is a coordinate
-gazetteer. It carries names, coordinates and map provenance. It carries no transport mode and
-no connectivity.
+Enumerate or dynamically optimise assignments subject to the registered rules. Record complete candidates and failures, not only a winning path. Compare the best real score with the best score for each control after identical optimisation.
 
-Required additional columns:
+Use shuffled controls preserving line lengths and letter counts, alongside independent period prose and poetry initialisms. Test whether station-name sampling actually represents travel, which revisits hubs. Report the effect of glyph variants, aliases, mode changes and every tried parameter set. Calibrate significance using the full search procedure; sparse short-string frequency tables do not justify unqualified chi-square p-values.
 
-| Column | Content |
-|---|---|
-| `mode` | rail, tram, trolleybus, motor bus, none |
-| `route_id` | line or route identifier, repeatable per place |
-| `route_seq` | ordinal position of the place along that route |
-| `service_from` | earliest confirmed service date |
-| `service_to` | closure date where applicable, else null |
-| `source` | primary source for the above |
+Where practical, reserve an unused line or an independent documentary prediction before model development. The book's telephone number, ticket destinations and known case geography cannot be reused as independent confirmation after they shaped the candidate pool.
 
-With `route_id` and `route_seq` populated, connectivity falls out for free: two places are
-directly connected if they share a `route_id`, and interchange is a shared place across two
-route identifiers.
+## Exploratory proximity pilot
 
-## The fork
+A coordinate-threshold graph may help debug the algorithm. It is not a recovered historical network. It can invent nonexistent links and omit genuine services, so either outcome remains conditional on that approximation. A negative has stronger implications only if the approximation is demonstrably a suitable superset of real possibilities; a positive never establishes the missing historical service.
 
-**Option A — proximity graph approximation.** Skip the network layer. Treat any two places
-within a threshold distance as connected. Runnable immediately from existing coordinates.
+## Reproducibility gate
 
-Cheap, and it can still falsify: if the real lines score no better than random even under a
-generous connectivity model, that is informative. But it can produce a false positive by
-inventing connections that did not exist, and a false negative by imposing a uniform threshold
-on a network whose density varied wildly between the inner suburbs and the outer routes.
-
-**Option B — build the network layer.** Slower. Requires source work in Municipal Tramways
-Trust records, railway working timetables and municipal bus route records. Produces a result
-that means what it appears to mean.
-
-**Assessment:** Option A is worth running as a pilot precisely because a negative under
-generous assumptions would be a strong negative, and cheap. It should not be reported as the
-test. If Option A returns anything other than a clean negative, Option B becomes necessary
-before any claim is made.
-
-## Scoring caution
-
-The scoring function is where a hypothesis like this gets quietly rescued. Every free
-parameter — walkable-gap threshold, interchange penalty, time budget — is an opportunity to
-tune until the real lines outperform. Fix the parameters and the random-string baseline
-*before* looking at how the real lines score, and record them in this document when set.
+Publish versioned inputs, producing script, environment, seed where relevant, full outputs, source coverage and a correction log. A successful reproduction of four supplied corridor strings must never be presented as an exhaustive 1948 transport search.

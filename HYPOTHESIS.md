@@ -1,84 +1,41 @@
-# The Hypothesis
+# The itinerary hypothesis
 
-## The claim
+Reviewed 5 September 2026. See [the complete review](docs/findings/route-review-2026-09-05.md) and [the interactive review](app/route-review.html).
 
-The five pencilled lines of capital letters found in the recovered Rubáiyát constitute a
-travel itinerary. Each letter is the initial of a place.
+## Claim under test
 
-A place means any of the following:
+The inscription associated with the recovered Rubáiyát may be a mnemonic itinerary using place-name initials. The candidate vocabulary may include suburbs, localities, stations, stops and named facilities reachable through an explicitly defined 1948 transport network. A rail-only model and a multimodal place model are different hypotheses and must be tested separately.
 
-- a suburb or residential locality
-- a country town
-- a railway station on the South Australian Commissioner's Railways network
-- a stop or terminus on the Glenelg tram
-- a stop or terminus on a Municipal Tramways Trust or municipal motor bus route
-- any named locality reachable from Adelaide by scheduled public transport in 1948
+No individual letter-to-place assignment, itinerary, author, writing date or motive is established. In particular, a search for Jessica Thomson is an additional hypothesis; it must not determine the place pool and then be presented as a conclusion from that pool. The strong 2022 genetic-genealogy identification as Carl Webb does not establish that he wrote the inscription.
 
-The itinerary is understood as places Carl Webb visited, or planned to visit, while searching
-for Jessica Thomson at 90A Moseley Street, Glenelg.
+## Working transcription
 
-## What this is not
+Physical line numbers are retained, including the cancelled line:
 
-**It is not a railway-station-only framework.** That was the starting frame and it was wrong.
-A rail-only candidate pool leaves Q permanently unresolved, because Quorn is the sole Q-initial
-station on the South Australian network and sits roughly 350 km from Adelaide — outside any
-plausible search radius for a man looking for a woman in Glenelg. Widening the pool to
-residential localities and bus-served suburbs resolves Q as Queenstown.
-
-**It is not a geographically unbounded framework.** The candidate pool is Adelaide and its
-reachable hinterland. A letter matching a place in Queensland is not a match.
-
-**It is not a cipher hypothesis.** No claim is made here about substitution, one-time pads, or
-any cryptographic construction. The claim is that the letters are mnemonic initials of place
-names.
-
-## The transcription
-
-```
-Line 1   W R G O A B A B D
-Line 2   M L I A O I
-Line 3   W T B I M P A N E T P
-Line 4   M L I A B O A I A Q C   [commonly reported as struck through]
-Line 5   I T T M T S A M S T G A B
+```text
+1  WRGOABABD
+2  MLIAOI          [cancelled; analysed separately]
+3  WTBIMPANETP
+4  MLIABOAIAQC
+5  ITTMTSAMSTGAB
 ```
 
-This is the repository's standard working transcription, consistent with
-`docs/hypothesis.md`. Character and strike-through variants must be frozen and recorded for
-each analysis rather than silently resolved. The imported RPFA work excluded Line 2 on the
-mistaken assumption that it was crossed out; those results require a sensitivity rerun using
-the standard reading and a documented treatment of Line 4. Its relationship to Line 2 — the
-shared `M L I A` opening — may still be relevant to how the writer worked.
+This corrects the repository's previous claim that physical line 4 was the cancelled line. The short second line is the conventional cancelled reading; the separate marks and line beneath the longer text should not be conflated with it. This is a working transcription of a published reproduction, not a forensic reading of the original book. See [the published police-scan reproduction](https://commons.wikimedia.org/wiki/File:SomertonManCode.jpg).
 
-Line 5 terminates `G A B`, read as Glenelg – Adelaide – Brighton.
+Vary the first glyph of physical lines 1 and 3 independently between W and M, and the last glyph of physical line 4 between C and S: eight predeclared readings. Preserve other graphic marks in any future image-based transcription record. The default has 44 active characters, 50 including the cancelled line, and 17 distinct letters; M/M/C has 16 distinct letters. The prior choice to exclude line 2 was not inherently an error.
 
-## What rests on what
+`GAB` can be expanded as Glenelg–Adelaide–Brighton, among other expansions. Its interpretation is a candidate, not a decoded result. `AQS` as a single facility abbreviation changes the encoding rule and requires a separate model from one letter per place.
 
-Carl Webb's identification via DNA in 2022 is the settled foundation of this work. Everything
-else in this repository is layered inference above it and is treated as such.
+## Current assessment
 
-The identification of the letters as an itinerary is inference.
-The identification of any individual letter with any individual place is inference.
-The search-for-Thomson motive is inference.
+The general itinerary hypothesis remains unproven. It has not been falsified across a complete 1948 multimodal network, because no such versioned network and executable search were recovered. A new reproducible check finds no complete active-line match in either direction of four previously transcribed rail-corridor strings. That bounded result does not cover journeys with transfers, omitted stops, walks or multiple days.
 
-None of these are established. They are the hypothesis under test.
+Queenstown is visibly a locality on the undated Adelaide Environs raster; it is not a stopping-place label on the inspected 1938 SAR metropolitan inset. A 1948 access claim needs its own dated route evidence. The phrase Adelaide Quarantine Station has historical precedent, but period use of AQS and a connection to the inscription remain unestablished.
 
-## The falsifiability problem
+## What would discriminate
 
-Every distinct letter in the standard transcription already has at least one
-Adelaide-reachable candidate place. This was confirmed empirically, not assumed. The
-consequence is that coverage tells us nothing: a random string of capitals drawn from the same
-alphabet would also be fully coverable.
+For a fixed place pool, permutations preserving the same alphabet always have the same letter coverage. That mathematical limitation is independent of whether the historical pool is fully verified. Coverage alone is not a route test.
 
-Set-membership analysis is therefore exhausted as a discriminating test. Only sequence and
-connectivity can separate a genuine itinerary from noise — whether the letters, read in order,
-trace a route that a person could actually have travelled on the 1948 network, in the order
-written, in a plausible time.
+A useful test must freeze transcription, vocabulary, grammar, date window, allowable modes, transfers, omissions and scoring before seeing results. It must compare the real inscription with shuffled and competing-initialism controls using the same search and optimisation for every control. Report failures, sensitivity, and missing-source coverage alongside successes.
 
-That test has not been run. Its design is in `docs/method/sequence-test-design.md`. Its
-blocking dependencies are in `OPEN_QUESTIONS.md`.
-
-## The 19-month void
-
-Webb's documented movements are absent between April 1947 and November 1948. The itinerary
-hypothesis, if it holds, would place activity inside that window. The void is what makes the
-hypothesis worth testing; it is not evidence for it.
+The inscription may concern another date or purpose. The tickets connected with 30 November 1948 constrain those ticketed services; they do not date the inscription or establish all of its destinations.
