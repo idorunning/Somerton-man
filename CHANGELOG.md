@@ -1,5 +1,16 @@
 # Changelog
 
+## 5 September 2026 — itinerary, source-map and reproducibility review
+
+- Corrected the cancelled-line attribution: the short physical second line is the primary cancelled reading. Retained M/W and C/S sensitivity variants and withdrew the claim that excluding line 2 was an inherent error.
+- Reproduced four prior-transcribed corridor strings under all eight variants and both directions: 256 active comparisons, no full-line matches. Corrected the Serviceton–Tailem Bend maximum overlap from two to one. Withdrew the unsupported all-1948-network negative.
+- Relabelled historical frequency and radius results as not reproduced; separated fixed-pool coverage from a sequence test and removed the unsupported natural-centre interpretation.
+- Audited 20 repository derivatives and 19 Drive metadata entries. Corrected regional frame labels, national-map provenance, original-file claims and map-date limitations. Existing raw JPEG checksums are unchanged.
+- Confirmed Queenstown as a locality on the undated environs raster, without establishing a railway stop or 1948 service. Recorded historic Adelaide Quarantine Station wording and the necessary water-access question as research leads.
+- Added a sourced full review, corrected methods and priorities, and a responsive route-review page with modern locator, source-image viewer, transcription controls and explicit uncertainty.
+- Live integration remains pending the separate existing Netlify source. Browser URL policy blocked its source download; the 24-page archive and access controls were not replaced.
+
+
 Analytical decisions and pivots, newest first. This is a record of *why* the analysis changed,
 not a list of file edits.
 
@@ -108,3 +119,4 @@ service date, which remains unconfirmed.
 Initial framework treated the candidate pool as South Australian railway stations. Superseded
 by the multimodal reframe and then by the residential locality reframe. Retained here for the
 record.
+

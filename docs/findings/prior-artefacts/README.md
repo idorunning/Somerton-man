@@ -1,5 +1,8 @@
 # Prior artefacts recovered from private project storage
 
+> **Review correction, 5 September 2026:** these are retained historical artefacts, not newly validated results. The short `MLIAOI` line is the primary cancelled reading; the long-line cancellation criticism in previous project material is withdrawn. The 14.39 km, 111/161 and 5.40 km results remain not reproduced. Queenstown is visible as a locality on the undated environs image, not a stopping-place label on the inspected SAR inset. See the [new review](../route-review-2026-09-05.md) before relying on a legacy assertion.
+
+
 Two documents recovered on 21 August 2026 from the private extractor-output folder. Both
 predate this repository and neither has a producing script here. Account details and storage
 identifiers are deliberately omitted from this public repository.
@@ -105,3 +108,4 @@ The extractor data files are in private project storage but were not included in
 Retrieve them from private project storage and place them in `data/processed/` and `src/`.
 `rpfa_analysis.py` is the more valuable of the two large items: it is the only surviving script
 that produces any of this, and once it is in `src/` the RPFA outputs stop being orphans.
+

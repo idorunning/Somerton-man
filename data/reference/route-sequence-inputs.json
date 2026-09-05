@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-09-05",
+  "title": "Bounded comparison with four previously transcribed railway corridor strings",
+  "provenance": {
+    "route_source_type": "prior project transcription",
+    "route_source_note": "The four strings below were read from the frozen-corridor tables in two recovered project reviews dated 21 August 2026. They have not been freshly transcribed from the retained map photographs or validated as an operational 1948 network.",
+    "route_sources": [
+      {"title": "Somerton route hypothesis review", "date": "2026-08-21", "recovered_filename": "somerton-route-hypothesis-review.md", "section": "Bounded route test", "table_rows": "Adelaide–Marino Rocks; Adelaide–Henley Beach; Adelaide–Port Adelaide; Serviceton–Tailem Bend", "access": "Recovered project document; corridor strings directly inspected"},
+      {"title": "Somerton full investigation review", "date": "2026-08-21", "recovered_filename": "somerton-full-investigation-review.md", "section": "Direct route tests", "access": "Recovered project document; corridor strings directly inspected", "correction": "This prior table reports a longest overlap of two for Serviceton–Tailem Bend. The present default-reading rerun finds one."}
+    ],
+    "route_source_to_scan_correspondence": "not verified",
+    "retained_map_context": "The project holds photographs of a South Australian railways map dated 30 June 1938; this is not itself proof of service availability in November 1948.",
+    "transcription_source_type": "explicit review working transcription",
+    "transcription_note": "Physical line 2, MLIAOI, is treated separately as cancelled, as in the recovered route-hypothesis review. Physical lines 1, 3, 4 and 5 are active. This freezes a reading for a sensitivity test; it does not settle the identity of ambiguous marks or the meaning of the writing. The first characters of physical lines 1 and 3 vary independently between W and M; only the terminal character of physical line 4 varies between C and S."
+  },
+  "active_lines": [
+    {"id": "L1", "physical_line": 1, "text": "WRGOABABD"},
+    {"id": "L3", "physical_line": 3, "text": "WTBIMPANETP"},
+    {"id": "L4", "physical_line": 4, "text": "MLIABOAIAQC"},
+    {"id": "L5", "physical_line": 5, "text": "ITTMTSAMSTGAB"}
+  ],
+  "cancelled_line": {"id": "L2", "physical_line": 2, "text": "MLIAOI"},
+  "variant_axes": [
+    {"id": "L1_initial", "line_id": "L1", "index": 0, "choices": ["W", "M"]},
+    {"id": "L3_initial", "line_id": "L3", "index": 0, "choices": ["W", "M"]},
+    {"id": "L4_terminal", "line_id": "L4", "index": -1, "choices": ["C", "S"]}
+  ],
+  "default_variant": "W/W/C",
+  "routes": [
+    {"id": "adelaide_marino_rocks", "label": "Adelaide–Marino Rocks", "sequence": "AMKGEEWAOHBSSMM"},
+    {"id": "adelaide_henley_beach", "label": "Adelaide–Henley Beach", "sequence": "ANBCWKWWASGGKMH"},
+    {"id": "adelaide_port_adelaide", "label": "Adelaide–Port Adelaide", "sequence": "ANBCWKWWHCAP"},
+    {"id": "serviceton_tailem_bend", "label": "Serviceton–Tailem Bend", "sequence": "SWBCWBKBCKTCCKYCCT"}
+  ],
+  "method": {
+    "comparison": "Each active code line compared separately with each corridor in both directions",
+    "matching": "Exact, contiguous character matching; no gaps, skipped initials, substitutions or reordering",
+    "full_line_match": "The complete code line occurs as a contiguous substring of the oriented corridor string",
+    "longest_overlap": "Longest common contiguous substring; all tied matching positions retained",
+    "line_boundaries": "No matches may cross code-line boundaries",
+    "cancelled_line_policy": "Compared separately once against each corridor in both directions; excluded from all active-line aggregates",
+    "positions": "Zero-based starts, with separate displayed one-based character positions",
+    "statistical_significance": "Not calculated: no null model or full-network search was performed"
+  },
+  "caveats": [
+    "The tested universe comprises four supplied strings, not all railway routes and not a reconstructed 1948 multimodal network.",
+    "The corridor strings are previous transcriptions. Their station completeness, ordering, naming dates and operational status have not been freshly verified for this test.",
+    "The corridor names are labels inherited from the supplied transcriptions; their use does not establish that every named endpoint existed or was served in 1948.",
+    "A zero full-line match rejects only an exact contiguous match within these strings under the tested readings. It does not refute all place-initial itineraries.",
+    "A short shared substring is descriptive overlap, not evidence of a journey or statistical significance.",
+    "The C/S comparison tests sensitivity to a proposed character reading. It does not identify Adelaide Quarantine Station or establish AQS as a period abbreviation.",
+    "This test contains no journey times, fares, transfers, ferry access, personal movements, motive or proof of authorship."
+  ]
+}

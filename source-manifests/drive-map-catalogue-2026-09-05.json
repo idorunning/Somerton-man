@@ -1,0 +1,152 @@
+{
+  "review_date": "2026-09-05",
+  "scope": "19 files enumerated in the private project map folder; original bytes not visually inspected",
+  "files": [
+    {
+      "title": "PXL_20250913_090310881.jpg",
+      "mime_type": "image/jpeg",
+      "size": "2696647",
+      "content_classification": "SAR 1938",
+      "scope_from_same_named_repo_derivative": "Mid North\u2013Adelaide\u2013Murray Mallee regional overview; upside down",
+      "original_pixels_reviewed": false
+    },
+    {
+      "title": "PXL_20250913_090351039.jpg",
+      "mime_type": "image/jpeg",
+      "size": "2409065",
+      "content_classification": "SAR 1938",
+      "scope_from_same_named_repo_derivative": "Port Augusta\u2013Port Pirie\u2013Mid North detail; sideways",
+      "original_pixels_reviewed": false
+    },
+    {
+      "title": "Queenstowns capture.png",
+      "mime_type": "image/png",
+      "size": "1148699",
+      "content_classification": "Unverified: metadata only",
+      "original_pixels_reviewed": false
+    },
+    {
+      "title": "IMG_0902.jpg",
+      "mime_type": "image/jpeg",
+      "size": "9936796",
+      "content_classification": "Unverified: metadata only",
+      "original_pixels_reviewed": false
+    },
+    {
+      "title": "PXL_20250913_090235356.jpg",
+      "mime_type": "image/jpeg",
+      "size": "2784406",
+      "content_classification": "SAR 1938",
+      "scope_from_same_named_repo_derivative": "Eyre Peninsula with part of metropolitan inset; upside down",
+      "original_pixels_reviewed": false
+    },
+    {
+      "title": "PXL_20250913_090410593.jpg",
+      "mime_type": "image/jpeg",
+      "size": "2263932",
+      "content_classification": "SAR 1938",
+      "scope_from_same_named_repo_derivative": "Metropolitan inset and Port Lincoln edge; sideways",
+      "original_pixels_reviewed": false
+    },
+    {
+      "title": "PXL_20250913_090316927.jpg",
+      "mime_type": "image/jpeg",
+      "size": "2688680",
+      "content_classification": "SAR 1938",
+      "scope_from_same_named_repo_derivative": "Title, report-year statement, signature and South-East; upside down",
+      "original_pixels_reviewed": false
+    },
+    {
+      "title": "PXL_20250913_090404586.jpg",
+      "mime_type": "image/jpeg",
+      "size": "2231773",
+      "content_classification": "SAR 1938",
+      "scope_from_same_named_repo_derivative": "Metropolitan inset and Port Lincoln edge; sideways",
+      "original_pixels_reviewed": false
+    },
+    {
+      "title": "PXL_20250913_090227294.jpg",
+      "mime_type": "image/jpeg",
+      "size": "2669840",
+      "content_classification": "SAR 1938",
+      "scope_from_same_named_repo_derivative": "Metropolitan inset and title block; sideways",
+      "original_pixels_reviewed": false
+    },
+    {
+      "title": "PXL_20250913_090331044.jpg",
+      "mime_type": "image/jpeg",
+      "size": "2571985",
+      "content_classification": "SAR 1938",
+      "scope_from_same_named_repo_derivative": "Port Augusta\u2013Mid North\u2013Adelaide and Victor Harbor; upright",
+      "original_pixels_reviewed": false
+    },
+    {
+      "title": "PXL_20250913_090435586.jpg",
+      "mime_type": "image/jpeg",
+      "size": "2506075",
+      "content_classification": "SAR 1938",
+      "scope_from_same_named_repo_derivative": "Southern Eyre Peninsula and Spencer Gulf/Yorke Peninsula; upright",
+      "original_pixels_reviewed": false
+    },
+    {
+      "title": "PXL_20250913_090431519.jpg",
+      "mime_type": "image/jpeg",
+      "size": "2265703",
+      "content_classification": "SAR 1938",
+      "scope_from_same_named_repo_derivative": "Eyre Peninsula, Port Lincoln\u2013Cummins\u2013Yeelanna\u2013Lock corridor; upside down",
+      "original_pixels_reviewed": false
+    },
+    {
+      "title": "PXL_20250915_160840983.jpg",
+      "mime_type": "image/jpeg",
+      "size": "2716100",
+      "content_classification": "Unverified: metadata only",
+      "original_pixels_reviewed": false
+    },
+    {
+      "title": "original_4dbe351e-1c66-4944-9b91-10e2fb335b90_PXL_20250913_094411475.jpg",
+      "mime_type": "image/jpeg",
+      "size": "2259312",
+      "content_classification": "National rail map; date unverified",
+      "scope_from_same_named_repo_derivative": "Map Showing the Principal Railway Systems of Australia; separately framed sheet; upright",
+      "original_pixels_reviewed": false
+    },
+    {
+      "title": "PXL_20251014_202643575.jpg",
+      "mime_type": "image/jpeg",
+      "size": "3000231",
+      "content_classification": "Unverified: metadata only",
+      "original_pixels_reviewed": false
+    },
+    {
+      "title": "PXL_20250919_111217787.jpg",
+      "mime_type": "image/jpeg",
+      "size": "3594396",
+      "content_classification": "Unverified: metadata only",
+      "original_pixels_reviewed": false
+    },
+    {
+      "title": "PXL_20250913_090440202.jpg",
+      "mime_type": "image/jpeg",
+      "size": "2320896",
+      "content_classification": "SAR 1938",
+      "scope_from_same_named_repo_derivative": "Port Augusta\u2013Port Pirie\u2013Mid North, with eastern Eyre Peninsula; upright",
+      "original_pixels_reviewed": false
+    },
+    {
+      "title": "PXL_20250919_111318947.jpg",
+      "mime_type": "image/jpeg",
+      "size": "3372474",
+      "content_classification": "Unverified: metadata only",
+      "original_pixels_reviewed": false
+    },
+    {
+      "title": "PXL_20250913_090344353.jpg",
+      "mime_type": "image/jpeg",
+      "size": "2043352",
+      "content_classification": "SAR 1938",
+      "scope_from_same_named_repo_derivative": "Murray Mallee and Tailem Bend\u2013Serviceton; upright",
+      "original_pixels_reviewed": false
+    }
+  ]
+}

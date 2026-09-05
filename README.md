@@ -3,18 +3,13 @@
 Original historical research into the five pencilled lines of capital letters found in the
 Rubáiyát of Omar Khayyám recovered in connection with the Somerton Man case.
 
-**The working hypothesis in one sentence:** each letter is the initial of a *place* — suburb,
-town, railway station, tram stop, bus stop or locality — that Carl Webb visited or planned to
-visit while searching for Jessica Thomson at 90A Moseley Street, Glenelg.
+**Working hypothesis:** the inscription may encode an itinerary using place-name initials, across one or more transport modes. Its author, writing date, actual journey and purpose are not established. A proposed search for Jessica Thomson is an additional inference, not the foundation of the model.
 
-Places, not stations. Rail is one mode among several. See `HYPOTHESIS.md` before doing
-anything else in this repository. `docs/hypothesis.md` preserves the broader research question,
-competing explanations and the rule that transcription variants must not be silently resolved.
+**Reviewed 5 September 2026:** read the [complete sourced review](docs/findings/route-review-2026-09-05.md), [revised hypothesis](HYPOTHESIS.md) and [interactive route section](app/route-review.html).
 
-**Current position:** the hypothesis is unfalsified. It is not supported. Set-membership
-matching cannot discriminate a genuine itinerary from a random string at the present candidate
-pool size. The test that could discriminate — sequence and connectivity across a reconstructed
-1948 network — has not yet been run.
+The review corrects the cancelled-line treatment, map provenance and unsupported claims of an exhaustive 1948 transport test. A new reproducible four-corridor check covers eight readings and finds no complete active-line matches. The broader multimodal theory remains unproven; no complete dated network was recovered. Legacy frequency and geographic-centre outputs remain not reproduced.
+
+The new section is additive and ready for integration. The separate deployed 24-page Netlify archive has not been refreshed: its source download was blocked by browser URL policy. See [integration notes](app/INTEGRATION.md).
 
 ---
 
@@ -28,7 +23,7 @@ somerton-man/
 ├── OPEN_QUESTIONS.md          live gaps and unresolved dependencies
 ├── CHANGELOG.md               dated analytical decisions and pivots
 ├── .gitignore
-├── app/                       browser-based map scaffold
+├── app/                       interactive review and original map scaffold
 ├── docs/
 │   ├── method/                how each analysis is constructed
 │   ├── findings/              results of completed tests, negatives included
@@ -53,8 +48,8 @@ somerton-man/
    and either reconstructed or deleted.
 
 3. **Negative results are filed alongside positive ones.** `docs/findings/` records what
-   failed as prominently as what held. The route-designation test returned a clean negative
-   and it sits in the same directory as everything else.
+   failed as prominently as what held. The bounded route-string result states its exact
+   scope and does not claim an exhaustive 1948 network search.
 
 4. **Load-bearing assumptions are labelled.** Any claim that a downstream conclusion depends
    on is marked `[LOAD-BEARING]` in the document where it appears and listed in
@@ -85,3 +80,4 @@ parsing; verify numeric columns against male-plus-female sums before use.
 South Australia*, June 30th 1938 (PP No. 47), signed R. H. Chapman, Chief Engineer for
 Railways. Base source for all rail station verification. See the provenance note in that
 directory.
+

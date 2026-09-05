@@ -1,122 +1,42 @@
-# Open Questions
+# Open research questions
 
-Live gaps, ordered by how much rests on them. Reviewed at the start of every working session.
+Reviewed 5 September 2026. See [the full review](docs/findings/route-review-2026-09-05.md) and [next actions](ACTIONS.md).
 
----
+## 1. What does one token represent?
 
-## 1. Queenstown: what kind of place was it, and when `[LOAD-BEARING]`
+Station-only, locality, multimodal destination and multi-letter facility models have different freedoms. Does a repeated letter always represent the same place? Are intermediate stops omitted? Are actions allowed? Is `AQS` one facility or three locations? These rules must be fixed before evaluating a match.
 
-Two documents in the project record flatly contradict each other, and the whole Q resolution
-sits on top of the disagreement.
+## 2. What is the best-supported transcription?
 
-**Account A (28 April 2026, `docs/findings/prior-artefacts/queenstown_analysis_2026-04-28.md`):**
-Queenstown was a railway station on the Adelaide–Port Adelaide main line, present on the 1938
-map, roughly six stops from Adelaide central. Read at high confidence from two images.
+The working primary reading excludes the cancelled physical second line, `MLIAOI`, and retains the long fourth line. The repository's prior cancellation criticism is withdrawn. The default W/W/C reading has 44 active characters, 50 with the cancelled line, and 17 distinct letters. M/M/C has 16. These counts are now reproduced, rather than treated as mutually contradictory arithmetic.
 
-**Account B (29 April 2026 session):** Queenstown was never an SA Railways station. It was
-served by the Port Adelaide tramway — horse trams from 1882, electrified 1917, closed July
-1935 — then motor bus and trolleybus from 1935 and 1938 onward.
+M/W at the starts of lines 1 and 3 and C/S at the end of line 4 remain predeclared variants. Independent image readings are needed before selecting among them. The new bounded test covers all eight; full frequency and RPFA sensitivity reruns remain outstanding.
 
-Account B is better sourced. Account A was not reading PP No. 47 at all: its two source images
-were a `PXL_20251014_*` Adelaide-environs street-and-rail map and a screen capture, neither of
-which is in this repository, and it dismisses its own pipeline's flag that Queenstown is absent
-from the PP47-derived canonical list. See the reconciliation note in
-`docs/findings/prior-artefacts/README.md`.
+## 3. How was Queenstown reachable in 1948?
 
-Separately, the "September 1941" motor bus date recorded throughout project notes has never
-been checked against a primary record, and Account B places continuous bus service from July
-1935 — six years earlier.
+Queenstown is visible on the undated Adelaide Environs raster, but not labelled as a stopping place on the inspected 1938 SAR metropolitan enlargement. That resolves the immediate map-reading claim without proving it never appeared in another source. The Albert Park tram corridor closed in 1934; the surviving Port Adelaide tram lines closed in 1935. The exact 1948 bus or other service is still to be sourced.
 
-**What rests on it:** the entire resolution of the Q problem, and therefore the justification
-for the multimodal reframe. If Queenstown was not reachable by scheduled public transport in
-1948, Q reverts to unresolved and Quorn at 350 km is the only candidate left.
+Queenstown is one Q candidate under a locality model, not the only possible resolution under every grammar. Geographic bounds and mode assumptions must be declared before judging alternatives.
 
-**What would settle it:** Municipal Tramways Trust annual reports; Port Adelaide municipal bus
-route records; the PP No. 47 sheet itself, read directly for a Queenstown label on the Port
-Adelaide line. That last one is cheap — the scans are in `data/raw/maps/1938-sa-railways/`.
+## 4. Is AQS a period abbreviation linked to the case?
 
-**Status:** contradicted and unresolved. Must be settled before the sequence test is run.
+The phrase Adelaide Quarantine Station is attested in an 1887 newspaper. No inspected source establishes the acronym in 1948 or its use by the writer. Access to Torrens Island before 1962 required launch or barge. Visitor, admission and nurse record series span 1948, but relevant entries have not been inspected. A place-name precedent is not evidence of a visit.
 
----
+## 5. Where are the original data and producing scripts?
 
-## 2. Impact of the corrected transcription `[LOAD-BEARING]`
+The recovered repository remains incomplete for the previously claimed full-network, frequency and residential-frame analyses. The full RPFA script and exact gazetteer, coordinates, census thresholds and scoring parameters are not recovered. The station placeholders must not be described as a populated 1948 network. The historical radius and rank outputs remain not reproduced.
 
-The imported archive changed W to M at the start of Lines 1 and 3 and marked Line 2 as struck
-through. The standard working transcription in the pre-existing repository uses W in those
-positions and records Line 4 as commonly reported crossed out.
+## 6. How complete is the historical network?
 
-Correcting W restores the reported **seventeen** distinct letters: A, B, C, D, E, G, I, L, M,
-N, O, P, Q, R, S, T and W. The arithmetic discrepancy is therefore resolved, but the imported
-frequency and RPFA outputs were produced under the wrong line-exclusion rule.
+The 1938 sheet establishes infrastructure context, not every 1948 passenger service. Timetables must supply stop order, direction, operating days, departures, fare stages and interchanges. Proximity cannot substitute for a documented connection, particularly across water. No exhaustive 1948 multimodal negative has been reproduced.
 
-**What rests on it:** the set-membership headline is unlikely to change because Adelaide-area
-W candidates exist, but that inference is not a substitute for a reproducible rerun. RPFA
-rankings may change when W is restored and the fourth-line treatment is corrected.
+## 7. What date, author and purpose would the code have?
 
-**Status:** transcription corrected on import; affected analyses still require rerunning.
+Tickets associated with 30 November 1948 do not date the inscription. The deceased's research identification does not establish handwriting authorship. A search for Jessica Thomson, another personal visit, work, another mnemonic and writing by someone else remain distinct possibilities. Independent evidence is needed to distinguish them.
 
----
+## 8. Which source access remains incomplete?
 
-## 3. The locations table has no network layer
-
-The existing locations table is a coordinate gazetteer with map provenance. It has no
-transport-mode column and no connectivity data. It is sufficient for set-membership work and
-insufficient for the sequence test as designed.
-
-**The decision to make:** either
-
-- **(a)** a fast proximity-graph approximation using existing coordinates — treats any two
-  places within a threshold distance as connected, ignores actual routes. Cheap, available
-  now, and produces a weaker result that could still falsify.
-- **(b)** hold for a proper 1948 network layer with mode tags and route identifiers added to
-  the extraction table. Slower, requires source work, produces a result that means something.
-
-Option (a) risks a false negative if the approximation drops real connections, and a false
-positive if it invents ones. Option (b) is the test as designed.
-
-**Status:** awaiting decision. This is the main fork in the road.
-
----
-
-## 4. Orphan and missing files
-
-Files referenced in project history that no script in `src/` currently produces, or that are
-absent from the repository entirely:
-
-| File | Nature | Action |
-|---|---|---|
-| `data/processed/stations.json` | 752 geocoded stations, 398 KB | Retrieve from the private project archive |
-| `tools/rpfa-residential-frame.html` | Interactive lens tool | Upload local copy or rebuild |
-| `tools/somerton-lab.html` | Earlier session output | Upload local copy |
-| `tools/somerton-explorer.html` | Earlier session output | Upload local copy |
-| Census metro municipality totals | Verified extraction | Re-run from ABS PDF, script to `src/` |
-| `src/rpfa_analysis.py` | The only surviving RPFA script | Retrieve the 19 KB version from the private project archive |
-| `data/raw/maps/PXL_20251014_*` | Source images cited by the Queenstown document | Not in Drive, not in the project folder. Upload if held locally. |
-
-None of these have a producing script. Once recovered, each needs either a script in `src/`
-that regenerates it, or an explicit note in `data/processed/README.md` recording that it is a
-manual artefact and how it was made.
-
----
-
-## 5. Census threshold sensitivity
-
-The residential frame uses a dual threshold toggle at ≥500 and ≥1,000 persons. Neither is
-principled — they were chosen as reasonable round numbers.
-
-**Question:** does the ranking of 90A Moseley Street, and the identity of the tightest-lens
-centre, change materially between thresholds? If the result is threshold-stable, say so. If it
-is not, the threshold becomes a load-bearing choice and needs justifying.
-
-**Status:** not tested.
-
----
-
-## 6. Treatment of the fourth-line strike-through
-
-Line 4 is commonly reported as crossed out. A frequency analysis may exclude it as a
-correction, while a sequence analysis may retain it as an abandoned plan. Either choice is a
-model decision, not a fact. The standard reading, an all-lines reading and any plausible
-character variants should be pre-declared before comparison.
-
-**Status:** open. Decide before rerunning RPFA or the sequence test, not during it.
+- The 19 Drive files were inventoried, but their original image bytes were not visually inspected after transfer failed. Twenty repository derivatives were reviewed.
+- The environs raster is undated and unregistered; the national map's date is unverified.
+- Some earlier source links and archive entries remain leads, not newly read documents.
+- The current 24-page Netlify website source is separate from the research repository. Browser URL policy blocked its source download. Integration of the prepared review remains pending access to that source.

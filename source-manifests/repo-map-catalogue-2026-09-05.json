@@ -1,0 +1,182 @@
+[
+  {
+    "filename": "PXL_20250913_090227294.jpg",
+    "series": "SAR 1938",
+    "scope": "Metropolitan inset and title block; sideways",
+    "local_path": "data/raw/maps/1938-sa-railways/PXL_20250913_090227294.jpg",
+    "bytes": 125043,
+    "sha256": "faa6815dc5b8778cf91c810d6e057e7a1ad8fd1d45031ca2ff7c35f853792807",
+    "reviewed": "image viewed; derivative resolution 952x1288 or 1288x952"
+  },
+  {
+    "filename": "PXL_20250913_090235356.jpg",
+    "series": "SAR 1938",
+    "scope": "Eyre Peninsula with part of metropolitan inset; upside down",
+    "local_path": "data/raw/maps/1938-sa-railways/PXL_20250913_090235356.jpg",
+    "bytes": 134373,
+    "sha256": "946c9920a26d2e0c60390b95f309355dcfa93f23d4b5fbd5b0d8b8a7d54b78a5",
+    "reviewed": "image viewed; derivative resolution 952x1288 or 1288x952"
+  },
+  {
+    "filename": "PXL_20250913_090241639.jpg",
+    "series": "SAR 1938",
+    "scope": "Trans-Australian Railway, Tarcoola\u2013Port Augusta region; sideways",
+    "local_path": "data/raw/maps/1938-sa-railways/PXL_20250913_090241639.jpg",
+    "bytes": 103811,
+    "sha256": "800bb4b11bfcb3826a8e84a6c300acd8407608f8021b5c49d6acafacbef3d4e3",
+    "reviewed": "image viewed; derivative resolution 952x1288 or 1288x952"
+  },
+  {
+    "filename": "PXL_20250913_090247806.jpg",
+    "series": "SAR 1938",
+    "scope": "Central Australia line around Oodnadatta; upside down",
+    "local_path": "data/raw/maps/1938-sa-railways/PXL_20250913_090247806.jpg",
+    "bytes": 95495,
+    "sha256": "5970101b3655f2fbf81b45a06c66868e5cdf7a63d22858caf8fe79614836acfd",
+    "reviewed": "image viewed; derivative resolution 952x1288 or 1288x952"
+  },
+  {
+    "filename": "PXL_20250913_090254215.jpg",
+    "series": "SAR 1938",
+    "scope": "Schedule of Railways, June 30th 1938; upside down",
+    "local_path": "data/raw/maps/1938-sa-railways/PXL_20250913_090254215.jpg",
+    "bytes": 132481,
+    "sha256": "16346628e1e52baec1db96c1377a48571bfc25509b953991f22a2f06bc11936c",
+    "reviewed": "image viewed; derivative resolution 952x1288 or 1288x952"
+  },
+  {
+    "filename": "PXL_20250913_090304479.jpg",
+    "series": "SAR 1938",
+    "scope": "Northern SA/Central Australia line with lower schedule; upside down",
+    "local_path": "data/raw/maps/1938-sa-railways/PXL_20250913_090304479.jpg",
+    "bytes": 132739,
+    "sha256": "ab15f6d7a0b6cd2f7210e8105e8aaaee66b1080b2a95c3e7a38fad4e112df1b4",
+    "reviewed": "image viewed; derivative resolution 952x1288 or 1288x952"
+  },
+  {
+    "filename": "PXL_20250913_090310881.jpg",
+    "series": "SAR 1938",
+    "scope": "Mid North\u2013Adelaide\u2013Murray Mallee regional overview; upside down",
+    "local_path": "data/raw/maps/1938-sa-railways/PXL_20250913_090310881.jpg",
+    "bytes": 149894,
+    "sha256": "128c4cff08a807f299d64ce13abf635c44e331e7441127d643952275f2314998",
+    "reviewed": "image viewed; derivative resolution 952x1288 or 1288x952"
+  },
+  {
+    "filename": "PXL_20250913_090316927.jpg",
+    "series": "SAR 1938",
+    "scope": "Title, report-year statement, signature and South-East; upside down",
+    "local_path": "data/raw/maps/1938-sa-railways/PXL_20250913_090316927.jpg",
+    "bytes": 128321,
+    "sha256": "64d94985fc64bf0c45e9fa2dd1efb16db297d44da73df944005583518e23268f",
+    "reviewed": "image viewed; derivative resolution 952x1288 or 1288x952"
+  },
+  {
+    "filename": "PXL_20250913_090331044.jpg",
+    "series": "SAR 1938",
+    "scope": "Port Augusta\u2013Mid North\u2013Adelaide and Victor Harbor; upright",
+    "local_path": "data/raw/maps/1938-sa-railways/PXL_20250913_090331044.jpg",
+    "bytes": 191909,
+    "sha256": "59b490d31bd3f5f55430762d50111346c11c0efda40b421a120035958fa2b60f",
+    "reviewed": "image viewed; derivative resolution 952x1288 or 1288x952"
+  },
+  {
+    "filename": "PXL_20250913_090344353.jpg",
+    "series": "SAR 1938",
+    "scope": "Murray Mallee and Tailem Bend\u2013Serviceton; upright",
+    "local_path": "data/raw/maps/1938-sa-railways/PXL_20250913_090344353.jpg",
+    "bytes": 133348,
+    "sha256": "09231cbfed0d6309a61a7540cabec79c681fc216074e4a28aa501ca884ba628c",
+    "reviewed": "image viewed; derivative resolution 952x1288 or 1288x952"
+  },
+  {
+    "filename": "PXL_20250913_090351039.jpg",
+    "series": "SAR 1938",
+    "scope": "Port Augusta\u2013Port Pirie\u2013Mid North detail; sideways",
+    "local_path": "data/raw/maps/1938-sa-railways/PXL_20250913_090351039.jpg",
+    "bytes": 183905,
+    "sha256": "c704236a758151598d58ca18c81e5b32fdaafe50831db8926b54f2e342171624",
+    "reviewed": "image viewed; derivative resolution 952x1288 or 1288x952"
+  },
+  {
+    "filename": "PXL_20250913_090404586.jpg",
+    "series": "SAR 1938",
+    "scope": "Metropolitan inset and Port Lincoln edge; sideways",
+    "local_path": "data/raw/maps/1938-sa-railways/PXL_20250913_090404586.jpg",
+    "bytes": 150538,
+    "sha256": "573874b195bc3ff2b7e782da5034f75045db6c989af22dbe7620eb740fa222f1",
+    "reviewed": "image viewed; derivative resolution 952x1288 or 1288x952"
+  },
+  {
+    "filename": "PXL_20250913_090410593.jpg",
+    "series": "SAR 1938",
+    "scope": "Metropolitan inset and Port Lincoln edge; sideways",
+    "local_path": "data/raw/maps/1938-sa-railways/PXL_20250913_090410593.jpg",
+    "bytes": 155969,
+    "sha256": "fb02a56142cd7bcc77e47a5f21d648233dfa4fa9f26957b176b9fc5094fa0caf",
+    "reviewed": "image viewed; derivative resolution 952x1288 or 1288x952"
+  },
+  {
+    "filename": "PXL_20250913_090415164.jpg",
+    "series": "SAR 1938",
+    "scope": "Metropolitan inset, broader view; sideways",
+    "local_path": "data/raw/maps/1938-sa-railways/PXL_20250913_090415164.jpg",
+    "bytes": 120469,
+    "sha256": "539a8fdfa60b3382da4396967a8b77ac0290061bbb78d5e639adc0a8b4094887",
+    "reviewed": "image viewed; derivative resolution 952x1288 or 1288x952"
+  },
+  {
+    "filename": "PXL_20250913_090419827.jpg",
+    "series": "SAR 1938",
+    "scope": "Metropolitan inset including its caption and Willunga extension; sideways",
+    "local_path": "data/raw/maps/1938-sa-railways/PXL_20250913_090419827.jpg",
+    "bytes": 114394,
+    "sha256": "0409e037558503d75692ae6b0b7d27ef6a02ab3a18f870c51a783b70f8b162c1",
+    "reviewed": "image viewed; derivative resolution 952x1288 or 1288x952"
+  },
+  {
+    "filename": "PXL_20250913_090426569.jpg",
+    "series": "SAR 1938",
+    "scope": "Western Eyre Peninsula, Penong\u2013Thevenard\u2013Wudinna; sideways",
+    "local_path": "data/raw/maps/1938-sa-railways/PXL_20250913_090426569.jpg",
+    "bytes": 126828,
+    "sha256": "d940a15a716141c3eb5ed125831bb3e155133296b0b6934936f47bec3e95de52",
+    "reviewed": "image viewed; derivative resolution 952x1288 or 1288x952"
+  },
+  {
+    "filename": "PXL_20250913_090431519.jpg",
+    "series": "SAR 1938",
+    "scope": "Eyre Peninsula, Port Lincoln\u2013Cummins\u2013Yeelanna\u2013Lock corridor; upside down",
+    "local_path": "data/raw/maps/1938-sa-railways/PXL_20250913_090431519.jpg",
+    "bytes": 145829,
+    "sha256": "7d42650a60577c59495d91527173d43a09729194f03048d32aca3447f493479a",
+    "reviewed": "image viewed; derivative resolution 952x1288 or 1288x952"
+  },
+  {
+    "filename": "PXL_20250913_090435586.jpg",
+    "series": "SAR 1938",
+    "scope": "Southern Eyre Peninsula and Spencer Gulf/Yorke Peninsula; upright",
+    "local_path": "data/raw/maps/1938-sa-railways/PXL_20250913_090435586.jpg",
+    "bytes": 182308,
+    "sha256": "f97dfce1c8d851b06c41aa740decbfa9b9233ca12aec3d793a2b724f7145934f",
+    "reviewed": "image viewed; derivative resolution 952x1288 or 1288x952"
+  },
+  {
+    "filename": "PXL_20250913_090440202.jpg",
+    "series": "SAR 1938",
+    "scope": "Port Augusta\u2013Port Pirie\u2013Mid North, with eastern Eyre Peninsula; upright",
+    "local_path": "data/raw/maps/1938-sa-railways/PXL_20250913_090440202.jpg",
+    "bytes": 164469,
+    "sha256": "b1de5a96dd7965fc395805327176572df097b78153bda6cfa0405b9886e08d0e",
+    "reviewed": "image viewed; derivative resolution 952x1288 or 1288x952"
+  },
+  {
+    "filename": "PXL_20250913_094411475.jpg",
+    "series": "National rail map; date unverified",
+    "scope": "Map Showing the Principal Railway Systems of Australia; separately framed sheet; upright",
+    "local_path": "data/raw/maps/1938-sa-railways/PXL_20250913_094411475.jpg",
+    "bytes": 167653,
+    "sha256": "c85480de71653dcc92dd980b6fbc9f6acd9b18d5d58a117bc9c7ec77891ad361",
+    "reviewed": "image viewed; derivative resolution 952x1288 or 1288x952"
+  }
+]
