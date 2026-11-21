@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "title": "South Australian Railways metropolitan network, 30 June 1938, as drawn on the PP No. 47 'Enlargement showing railways near Adelaide'",
+  "transcribed": "2026-11-21",
+  "source": {
+    "document": "Map Showing Lines of Railways in South Australia, 30 June 1938, P.P. No. 47",
+    "frames": [
+      "data/raw/maps/1938-sa-railways/PXL_20250913_090410593.jpg",
+      "data/raw/maps/1938-sa-railways/PXL_20250913_090419827.jpg"
+    ],
+    "method": "Read by eye from the repository derivatives, rotated and enlarged. Station order follows the dots and labels on the inset. No timetable was consulted."
+  },
+  "caveats": [
+    "This is infrastructure drawn in 1938. It is not proof that every station had a passenger stop on a given day in 1947-48.",
+    "Order is marked 'medium' where labels crowd together on the photograph. Those positions should be checked against a 1948 working timetable.",
+    "The Glenelg line had been converted to an electric tramway in 1929, so it is not on the railway inset. It is added as a separate tram edge (see 'extra_edges') because the project's GAB reading depends on it.",
+    "Station names are the names printed on the map. Two stations carry a second, commonly used name as an alias (North Terrace = Adelaide; Commercial Rd = Port Adelaide). Each alias gives that station an extra initial."
+  ],
+  "aliases": {
+    "North Terrace": ["Adelaide"],
+    "Commercial Rd": ["Port Adelaide"]
+  },
+  "lines": [
+    {"id": "port", "label": "Adelaide-Port Adelaide-Outer Harbour", "confidence": "high",
+     "stations": ["North Terrace", "Bowden", "Croydon", "West Croydon", "Kilkenny", "Woodville Park", "Woodville", "Holdens", "Cheltenham", "Alberton", "Commercial Rd", "Ethelton", "Glanville", "Peterhead", "Largs", "Swansea", "Draper", "Taperoo", "Midlunga", "Osborne", "Outer Harbour"]},
+    {"id": "semaphore", "label": "Semaphore branch", "confidence": "medium",
+     "stations": ["Glanville", "Exeter", "Semaphore"]},
+    {"id": "grange", "label": "Grange and Henley Beach line", "confidence": "high",
+     "stations": ["Woodville", "Albert Park", "Seaton Park", "Golf Links", "Grange", "Kirkcaldy", "Marlborough St", "Henley Beach"]},
+    {"id": "north", "label": "North line towards Gawler (inset portion)", "confidence": "high",
+     "stations": ["North Terrace", "North Adelaide", "Ovingham", "Dudley Park", "Islington", "Kilburn", "Dry Creek", "Salisbury"]},
+    {"id": "drycreek_port", "label": "Dry Creek-Port Adelaide line", "confidence": "medium",
+     "stations": ["Dry Creek", "North Arm Rd", "Wingfield", "Rosewater", "Dock", "Commercial Rd"]},
+    {"id": "northfield", "label": "Northfield branch", "confidence": "high",
+     "stations": ["Dry Creek", "Cavan", "Abattoirs", "Northfield", "Stockade"]},
+    {"id": "south_trunk", "label": "South trunk", "confidence": "high",
+     "stations": ["North Terrace", "Mile End", "Keswick", "Goodwood"]},
+    {"id": "brighton", "label": "Brighton-Marino line", "confidence": "high",
+     "stations": ["Goodwood", "Emerson", "Edwardstown", "Woodlands Park", "Ascot Park", "Oaklands", "Hove", "Brighton", "South Brighton", "Seacliff", "Marino", "Marino Rocks"]},
+    {"id": "willunga", "label": "Willunga line", "confidence": "high",
+     "stations": ["Marino Rocks", "Hallett's Cove", "Happy Valley", "Reynella", "Pimpala", "Coorara", "Morphett Vale", "Hackham", "Noarlunga", "Moana", "McLaren Vale", "Willunga"]},
+    {"id": "hills", "label": "Hills line (Melbourne main line, inset portion)", "confidence": "medium",
+     "stations": ["Goodwood", "Millswood", "Clarence Park", "Unley Park", "Hawthorn", "Mitcham", "Torrens Park", "Clapham", "Sleep's Hill", "Eden", "Brighton Parade", "Blackwood", "Belair Road", "Belair", "Overway Bridge", "National Park", "Long Gully", "Upper Sturt", "Nalawort", "Mt Lofty", "Heathfield", "Aldgate", "Carripook", "Bridgewater", "Yantaringa", "Ambleside", "Balhannah"]}
+  ],
+  "extra_edges": [
+    {"from": "North Terrace", "to": "Glenelg", "mode": "tram", "weight": 8,
+     "note": "Victoria Square-Glenelg electric tramway (from 1929), with a short city walk from the railway station. Weight 8 was fixed before scoring as roughly the station-hop equivalent of the same distance on the Brighton line (Adelaide-Oaklands). Intermediate tram stops are not modelled."}
+  ]
+}

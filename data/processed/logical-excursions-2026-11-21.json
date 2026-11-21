@@ -1,0 +1,836 @@
+{
+ "status": "exploratory, post hoc",
+ "rule": "Exploratory search-pattern analysis: hub excursions with at most one turnaround.\n\nPOST HOC. Written on 21 November 2026 after seeing the pre-registered result of\nsrc/selected_stop_routes.py, which showed hub-and-spoke shapes in lines 1, 2 and 4.\nIts outputs are candidates for checking against timetables, not findings.\n\nRule (\"logical excursion\"): read every A as Adelaide (North Terrace). That splits\neach line into segments: hub-to-hub excursions, plus the open stretches before the\nfirst A and after the last A. Inside a segment, the traveller rides shortest paths\nbetween stops and may reverse direction at most once (one turnaround), so each\nsegment is a single out-and-back or a one-way sweep. Unmatched letters (Q) are\nskipped.\n\nFor each segment it lists every station assignment that satisfies the rule, ranked\nby travel cost, and it measures how often within-line shuffles of the same letters\ncan also be read this way.",
+ "lines": {
+  "L1": {
+   "text": "WRGOABABD",
+   "cancelled": false,
+   "every_segment_logical": true,
+   "shuffles_every_segment_logical": 0.8235,
+   "segments": [
+    {
+     "segment": "W R G O A",
+     "n_logical_readings": 22,
+     "top": [
+      {
+       "cost": 18,
+       "stops": [
+        "Wingfield",
+        "Rosewater",
+        "Glanville",
+        "Ovingham",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 29,
+       "stops": [
+        "Willunga",
+        "Reynella",
+        "Goodwood",
+        "Ovingham",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 31,
+       "stops": [
+        "Wingfield",
+        "Rosewater",
+        "Glanville",
+        "Osborne",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 31,
+       "stops": [
+        "Woodville",
+        "Rosewater",
+        "Goodwood",
+        "Oaklands",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 32,
+       "stops": [
+        "Woodlands Park",
+        "Rosewater",
+        "Glanville",
+        "Ovingham",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 32,
+       "stops": [
+        "Woodville Park",
+        "Rosewater",
+        "Goodwood",
+        "Oaklands",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 33,
+       "stops": [
+        "Wingfield",
+        "Rosewater",
+        "Glanville",
+        "Outer Harbour",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 34,
+       "stops": [
+        "West Croydon",
+        "Rosewater",
+        "Goodwood",
+        "Oaklands",
+        "Adelaide"
+       ]
+      }
+     ]
+    },
+    {
+     "segment": "A B A",
+     "n_logical_readings": 8,
+     "top": [
+      {
+       "cost": 2,
+       "stops": [
+        "Adelaide",
+        "Bowden",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 20,
+       "stops": [
+        "Adelaide",
+        "Brighton",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 26,
+       "stops": [
+        "Adelaide",
+        "Brighton Parade",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 28,
+       "stops": [
+        "Adelaide",
+        "Blackwood",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 30,
+       "stops": [
+        "Adelaide",
+        "Belair Road",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 32,
+       "stops": [
+        "Adelaide",
+        "Belair",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 52,
+       "stops": [
+        "Adelaide",
+        "Bridgewater",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 58,
+       "stops": [
+        "Adelaide",
+        "Balhannah",
+        "Adelaide"
+       ]
+      }
+     ]
+    },
+    {
+     "segment": "A B D",
+     "n_logical_readings": 32,
+     "top": [
+      {
+       "cost": 5,
+       "stops": [
+        "Adelaide",
+        "Bowden",
+        "Dudley Park"
+       ]
+      },
+      {
+       "cost": 8,
+       "stops": [
+        "Adelaide",
+        "Bowden",
+        "Dry Creek"
+       ]
+      },
+      {
+       "cost": 11,
+       "stops": [
+        "Adelaide",
+        "Bowden",
+        "Dock"
+       ]
+      },
+      {
+       "cost": 16,
+       "stops": [
+        "Adelaide",
+        "Bowden",
+        "Draper"
+       ]
+      },
+      {
+       "cost": 23,
+       "stops": [
+        "Adelaide",
+        "Brighton",
+        "Dudley Park"
+       ]
+      },
+      {
+       "cost": 26,
+       "stops": [
+        "Adelaide",
+        "Brighton",
+        "Dry Creek"
+       ]
+      },
+      {
+       "cost": 29,
+       "stops": [
+        "Adelaide",
+        "Brighton Parade",
+        "Dudley Park"
+       ]
+      },
+      {
+       "cost": 30,
+       "stops": [
+        "Adelaide",
+        "Brighton",
+        "Dock"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "L3": {
+   "text": "WTBIMPANETP",
+   "cancelled": false,
+   "every_segment_logical": false,
+   "shuffles_every_segment_logical": 0.257,
+   "segments": [
+    {
+     "segment": "W T B I M P A",
+     "n_logical_readings": 0,
+     "top": []
+    },
+    {
+     "segment": "A N E T P",
+     "n_logical_readings": 12,
+     "top": [
+      {
+       "cost": 22,
+       "stops": [
+        "Adelaide",
+        "North Adelaide",
+        "Ethelton",
+        "Taperoo",
+        "Peterhead"
+       ]
+      },
+      {
+       "cost": 22,
+       "stops": [
+        "Adelaide",
+        "North Arm Rd",
+        "Ethelton",
+        "Taperoo",
+        "Peterhead"
+       ]
+      },
+      {
+       "cost": 25,
+       "stops": [
+        "Adelaide",
+        "North Adelaide",
+        "Ethelton",
+        "Taperoo",
+        "Port Adelaide"
+       ]
+      },
+      {
+       "cost": 25,
+       "stops": [
+        "Adelaide",
+        "North Arm Rd",
+        "Ethelton",
+        "Taperoo",
+        "Port Adelaide"
+       ]
+      },
+      {
+       "cost": 46,
+       "stops": [
+        "Adelaide",
+        "National Park",
+        "Eden",
+        "Torrens Park",
+        "Port Adelaide"
+       ]
+      },
+      {
+       "cost": 48,
+       "stops": [
+        "Adelaide",
+        "National Park",
+        "Eden",
+        "Torrens Park",
+        "Pimpala"
+       ]
+      },
+      {
+       "cost": 49,
+       "stops": [
+        "Adelaide",
+        "National Park",
+        "Eden",
+        "Torrens Park",
+        "Peterhead"
+       ]
+      },
+      {
+       "cost": 52,
+       "stops": [
+        "Adelaide",
+        "Nalawort",
+        "Eden",
+        "Torrens Park",
+        "Port Adelaide"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "L4": {
+   "text": "MLIABOAIAQC",
+   "cancelled": false,
+   "every_segment_logical": true,
+   "shuffles_every_segment_logical": 0.4955,
+   "segments": [
+    {
+     "segment": "M L I A",
+     "n_logical_readings": 12,
+     "top": [
+      {
+       "cost": 19,
+       "stops": [
+        "Midlunga",
+        "Largs",
+        "Islington",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 29,
+       "stops": [
+        "Marlborough St",
+        "Largs",
+        "Islington",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 30,
+       "stops": [
+        "Mile End",
+        "Largs",
+        "Islington",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 30,
+       "stops": [
+        "Mt Lofty",
+        "Long Gully",
+        "Islington",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 33,
+       "stops": [
+        "Millswood",
+        "Largs",
+        "Islington",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 37,
+       "stops": [
+        "Mitcham",
+        "Largs",
+        "Islington",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 42,
+       "stops": [
+        "Marino",
+        "Largs",
+        "Islington",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 43,
+       "stops": [
+        "Marino Rocks",
+        "Largs",
+        "Islington",
+        "Adelaide"
+       ]
+      }
+     ]
+    },
+    {
+     "segment": "A B O A",
+     "n_logical_readings": 9,
+     "top": [
+      {
+       "cost": 20,
+       "stops": [
+        "Adelaide",
+        "Brighton",
+        "Oaklands",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 34,
+       "stops": [
+        "Adelaide",
+        "Belair",
+        "Overway Bridge",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 34,
+       "stops": [
+        "Adelaide",
+        "Belair Road",
+        "Overway Bridge",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 34,
+       "stops": [
+        "Adelaide",
+        "Blackwood",
+        "Overway Bridge",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 34,
+       "stops": [
+        "Adelaide",
+        "Brighton Parade",
+        "Overway Bridge",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 38,
+       "stops": [
+        "Adelaide",
+        "Bowden",
+        "Osborne",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 40,
+       "stops": [
+        "Adelaide",
+        "Bowden",
+        "Outer Harbour",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 52,
+       "stops": [
+        "Adelaide",
+        "Bridgewater",
+        "Overway Bridge",
+        "Adelaide"
+       ]
+      }
+     ]
+    },
+    {
+     "segment": "A I A",
+     "n_logical_readings": 1,
+     "top": [
+      {
+       "cost": 8,
+       "stops": [
+        "Adelaide",
+        "Islington",
+        "Adelaide"
+       ]
+      }
+     ]
+    },
+    {
+     "segment": "A Q C",
+     "n_logical_readings": 8,
+     "top": [
+      {
+       "cost": 2,
+       "stops": [
+        "Adelaide",
+        "Croydon"
+       ]
+      },
+      {
+       "cost": 5,
+       "stops": [
+        "Adelaide",
+        "Clarence Park"
+       ]
+      },
+      {
+       "cost": 7,
+       "stops": [
+        "Adelaide",
+        "Cavan"
+       ]
+      },
+      {
+       "cost": 8,
+       "stops": [
+        "Adelaide",
+        "Cheltenham"
+       ]
+      },
+      {
+       "cost": 10,
+       "stops": [
+        "Adelaide",
+        "Clapham"
+       ]
+      },
+      {
+       "cost": 10,
+       "stops": [
+        "Adelaide",
+        "Commercial Rd"
+       ]
+      },
+      {
+       "cost": 19,
+       "stops": [
+        "Adelaide",
+        "Coorara"
+       ]
+      },
+      {
+       "cost": 25,
+       "stops": [
+        "Adelaide",
+        "Carripook"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "L5": {
+   "text": "ITTMTSAMSTGAB",
+   "cancelled": false,
+   "every_segment_logical": false,
+   "shuffles_every_segment_logical": 0.075,
+   "segments": [
+    {
+     "segment": "I T T M T S A",
+     "n_logical_readings": 0,
+     "top": []
+    },
+    {
+     "segment": "A M S T G A",
+     "n_logical_readings": 4,
+     "top": [
+      {
+       "cost": 22,
+       "stops": [
+        "Adelaide",
+        "Mile End",
+        "Sleep's Hill",
+        "Torrens Park",
+        "Goodwood",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 22,
+       "stops": [
+        "Adelaide",
+        "Millswood",
+        "Sleep's Hill",
+        "Torrens Park",
+        "Goodwood",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 22,
+       "stops": [
+        "Adelaide",
+        "Mitcham",
+        "Sleep's Hill",
+        "Torrens Park",
+        "Goodwood",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 44,
+       "stops": [
+        "Adelaide",
+        "Mt Lofty",
+        "Sleep's Hill",
+        "Torrens Park",
+        "Goodwood",
+        "Adelaide"
+       ]
+      }
+     ]
+    },
+    {
+     "segment": "A B",
+     "n_logical_readings": 8,
+     "top": [
+      {
+       "cost": 1,
+       "stops": [
+        "Adelaide",
+        "Bowden"
+       ]
+      },
+      {
+       "cost": 10,
+       "stops": [
+        "Adelaide",
+        "Brighton"
+       ]
+      },
+      {
+       "cost": 13,
+       "stops": [
+        "Adelaide",
+        "Brighton Parade"
+       ]
+      },
+      {
+       "cost": 14,
+       "stops": [
+        "Adelaide",
+        "Blackwood"
+       ]
+      },
+      {
+       "cost": 15,
+       "stops": [
+        "Adelaide",
+        "Belair Road"
+       ]
+      },
+      {
+       "cost": 16,
+       "stops": [
+        "Adelaide",
+        "Belair"
+       ]
+      },
+      {
+       "cost": 26,
+       "stops": [
+        "Adelaide",
+        "Bridgewater"
+       ]
+      },
+      {
+       "cost": 29,
+       "stops": [
+        "Adelaide",
+        "Balhannah"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "L2": {
+   "text": "MLIAOI",
+   "cancelled": true,
+   "every_segment_logical": true,
+   "shuffles_every_segment_logical": 0.5395,
+   "segments": [
+    {
+     "segment": "M L I A",
+     "n_logical_readings": 12,
+     "top": [
+      {
+       "cost": 19,
+       "stops": [
+        "Midlunga",
+        "Largs",
+        "Islington",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 29,
+       "stops": [
+        "Marlborough St",
+        "Largs",
+        "Islington",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 30,
+       "stops": [
+        "Mile End",
+        "Largs",
+        "Islington",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 30,
+       "stops": [
+        "Mt Lofty",
+        "Long Gully",
+        "Islington",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 33,
+       "stops": [
+        "Millswood",
+        "Largs",
+        "Islington",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 37,
+       "stops": [
+        "Mitcham",
+        "Largs",
+        "Islington",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 42,
+       "stops": [
+        "Marino",
+        "Largs",
+        "Islington",
+        "Adelaide"
+       ]
+      },
+      {
+       "cost": 43,
+       "stops": [
+        "Marino Rocks",
+        "Largs",
+        "Islington",
+        "Adelaide"
+       ]
+      }
+     ]
+    },
+    {
+     "segment": "A O I",
+     "n_logical_readings": 5,
+     "top": [
+      {
+       "cost": 4,
+       "stops": [
+        "Adelaide",
+        "Ovingham",
+        "Islington"
+       ]
+      },
+      {
+       "cost": 20,
+       "stops": [
+        "Adelaide",
+        "Oaklands",
+        "Islington"
+       ]
+      },
+      {
+       "cost": 35,
+       "stops": [
+        "Adelaide",
+        "Osborne",
+        "Islington"
+       ]
+      },
+      {
+       "cost": 37,
+       "stops": [
+        "Adelaide",
+        "Outer Harbour",
+        "Islington"
+       ]
+      },
+      {
+       "cost": 38,
+       "stops": [
+        "Adelaide",
+        "Overway Bridge",
+        "Islington"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
