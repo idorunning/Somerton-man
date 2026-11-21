@@ -93,3 +93,11 @@ the letters, so they are candidates, not findings.
 - Metropolitan inset only. Country stations (Gawler, Murray Bridge, Quorn and so on) are out.
 - No interchange penalty, fares or times.
 - The tram weight of 8 is a judgement. It affects only legs touching Glenelg.
+
+## Clarification added before the first full run
+
+A quick 200-draw control run stopped on a shuffled string containing `AA` under M2, where
+both letters must be Adelaide and consecutive stops must differ. Rule added: **a letter that
+cannot be given a station different from the previous stop is treated like an unmatched
+letter (penalty 12).** It applies identically to real lines and controls. No real line was
+scored before this rule was written; the real retained lines contain no such adjacency.

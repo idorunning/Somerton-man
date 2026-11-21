@@ -29,6 +29,8 @@ Previously referenced artefacts include `stations.json`, `stations.csv`, `statio
 
 Freeze scoring, time budgets, transfer penalties and all search freedoms. Fit the same algorithm to the real inscription, shuffled controls preserving counts and line lengths, and period prose/poetry initials. Optimise every control identically and account for every tested variant.
 
+**Progress, 21 November 2026:** a pre-registered selected-stop test on the 1938 metropolitan rail network has been run (`docs/findings/selected-stop-routes-2026-11-21.md`). Inconclusive. Next: (a) confirm 1947–48 passenger stops at Sleep's Hill, Torrens Park, Oaklands, Brighton and Islington in a SAR working timetable; (b) add bus routes, starting with Queenstown, as a separate model under the same thresholds; (c) run a frozen period prose and verse initial corpus through `src/selected_stop_routes.py` as the competing-initialism control.
+
 A proximity-only graph may be a labelled exploratory pilot. Its negative result cannot falsify the dated network unless it is shown to include all relevant real connections and comparable costs; its positive result cannot establish that an actual service existed.
 
 ## 5. Seek independent documentary evidence

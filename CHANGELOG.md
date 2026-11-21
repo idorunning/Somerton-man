@@ -1,5 +1,13 @@
 # Changelog
 
+## 21 November 2026 — selected-stop rail route test and search-pattern analysis
+
+- Transcribed the 1938 PP No. 47 metropolitan inset into `data/reference/sar-metro-1938-network.json`: 96 stations, 10 lines, plus the Adelaide–Glenelg tram. First machine-readable network in the repository.
+- Pre-registered and ran a selected-stop model (letters = stations alighted at, shortest-path travel between them) against 10,000 within-line and global shuffles for all 16 readings. Result inconclusive under the declared thresholds: 10–14% of within-line shuffles match the default reading's compactness; no reading reaches 5%.
+- Route-like order is concentrated in lines 1, 4 and cancelled line 2 (hub-and-spoke). Lines 3 and 5 read as chance.
+- Exploratory, post hoc: one-turnaround excursion readings. Strongest constraints: line 5 `AMSTGA` as a Hills line out-and-back (Sleep's Hill, Torrens Park, Goodwood; only 4 readings) and line 4 `ABOA` as Adelaide → Brighton → Oaklands → Adelaide. No metropolitan rail Q exists.
+- See `docs/findings/selected-stop-routes-2026-11-21.md`.
+
 ## 5 September 2026 — itinerary, source-map and reproducibility review
 
 - Corrected the cancelled-line attribution: the short physical second line is the primary cancelled reading. Retained M/W and C/S sensitivity variants and withdrew the claim that excluding line 2 was an inherent error.
